@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #222;
+    .page{
+        width: 90%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+h2{
+    color: darkblue;
+    text-align:  centre;
+}
+h2{
+    color: #333;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+a{
+    text-decoration: nome;
+    color: blue;
+    margin-right: 15px;
+}
+a:hover{
+    color: red;
+}
+ul{
+    background-color: white;
+    padding: 10px;
+}
+li{
+    margin-bottom: 5px;
+}
+imag{
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.section{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.highlight{
+    color: green;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+}
+main{
+    flex: 3;
+    padding: 20px;
+    background-color: white;
+}
+aside{
+    flex: 1;
+    padding: 20px;
+    background-color: #ddd;
+}
+header{
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: yellow;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: #0b3d91;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #222;
+    padding: 12px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #ffcc00;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+main{
+    flex: 3;
+    background-color: white;
+
+    padding: 20px;
+    border-radius: 8px;
+}
+aside{
+    flex: 1;
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 8px;
+}
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+}@media (max-width: 900px) { 
+    .page { 
+        width: 95%; 
+    }
+    .container { 
+        gap: 15px; 
+    }
+    main { 
+        padding: 15px; 
+    }
+    aside { 
+        padding: 15px; 
+    }
+}
+@media (max-width: 768px) { 
+    .container { 
+        flex-direction: column; 
+    }
+    nav { 
+        flex-direction: column; /* Place les liens du menu verticalement */
+        align-items: center; 
+        gap: 10px; 
+    }
+    header { /* Cible l'en-tête */
+        padding: 15px; 
+    }
+    h1 { 
+        font-size: 24px; 
+    }
+    h2 { 
+        font-size: 20px; /* Réduit la taille des sous-titres */
+    }
+    p { /* Cible les paragraphes */
+        font-size: 15px; /* Ajuste la taille du texte pour mobile */
+    }
+}
+@media (max-width: 480px) { /* Applique les règles suivantes aux petits smartphones */
+    .page { /* Cible le conteneur général */
+        width: 100%; /* Utilise toute la largeur disponible */
+    }
+    body { /* Cible toute la page */
+        background-color: white; /* Supprime le fond gris pour simplifier l'affichage mobile */
+}
+header { /* Cible l'en-tête */
+    border-radius: 0; /* Supprime les coins arrondis si présents */
+}
+main { /* Cible la zone principale */
+    border-radius: 0; /* Supprime les coins arrondis sur très petit écran */
+    padding: 12px; /* Réduit davantage l'espace intérieur */
+}
+aside { /* Cible la barre latérale */
+    border-radius: 0; /* Supprime les coins arrondis sur très petit écran */
+    padding: 12px; /* Réduit davantage l'espace intérieur */
+}
+nav a { /* Cible les liens du menu */
+    font-size: 14px; /* Réduit légèrement la taille des liens */
+}
+footer { /* Cible le pied de page */
+    font-size: 14px; /* Réduit la taille du texte du pied de page */
+}
+}
+input { /* Cible les champs de saisie */
+    width: 100%; /* Donne au champ toute la largeur disponible */
+    padding: 10px; /* Ajoute un espace intérieur pour faciliter la saisie */
+    margin-bottom: 12px; /* Ajoute un espace sous chaque champ */
+    border: 1px solid #ccc; /* Ajoute une bordure grise simple */
+    border-radius: 5px; /* Arrondit légèrement les coins */
+}
+textarea { /* Cible les zones de texte longues */
+    width: 100%; 
+    padding: 10px; /* Ajoute un espace intérieur */
+    margin-bottom: 12px; /* Ajoute un espace sous la zone */
+    border: 1px solid #ccc; /* Ajoute une bordure grise */
+    border-radius: 5px; 
+}
+
+select { 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+button { 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #0b3d91; 
+    color: white; 
+    cursor: pointer; 
+}
+
+}
