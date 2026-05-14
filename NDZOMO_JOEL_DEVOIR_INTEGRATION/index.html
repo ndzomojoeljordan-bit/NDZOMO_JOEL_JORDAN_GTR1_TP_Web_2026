@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNova - L'actualité des nouvelles technologies</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER + HERO -->
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-icon">N</span>
+        <div>
+          <strong>TechNova</strong>
+          <small>L'actualité des nouvelles technologies</small>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="active">ACCUEIL</a></li>
+        <li><a href="#">IA</a></li>
+        <li><a href="#">CYBERSÉCURITÉ</a></li>
+        <li><a href="#">CLOUD</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">À PROPOS</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <a href="#" class="btn btn-primary">S'ABONNER</a>
+      <button class="burger">☰</button>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-content">
+        <main>
+      <p class="subtitle">Découvrez le futur, aujourd'hui</p>
+      <h1>L'actualité des<br>nouvelles technologies</h1>
+      <p>Restez informé des dernières avancées en intelligence artificielle, cybersécurité, cloud computing et bien plus encore.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn btn-primary">Explorer les articles</a>
+        <a href="#" class="btn btn-outline">Voir nos vidéos</a>
+      </div>
+        </main>
+        <aside>
+      <div class="hero-image">
+        <img src="Dossier images/gt.jpg">
+      </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <!-- NOS DOMAINES -->
+  <section class="domains">
+    <p class="section-label">NOS DOMAINES</p>
+    <h2>Les technologies qui façonnent demain</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon bg-purple">🧠</div>
+        <h3>Intelligence Artificielle</h3>
+        <p>Explorez les innovations en IA, apprentissage automatique et deep learning qui transforment notre monde.</p>
+        <a href="#">En savoir plus →</a>
+      </div>
+      <div class="card">
+        <div class="icon bg-green">
+          <img src="Dossier images/photo.jpg" alt="IA">
+        </div>
+        <h3>Cybersécurité</h3>
+        <p>Protégez vos données et systèmes grâce aux dernières actualités, menaces et solutions en sécurité informatique.</p>
+        <a href="#">En savoir plus →</a>
+      </div>
+      <div class="card">
+        <div class="icon bg-blue">☁️</div>
+        <h3>Cloud Computing</h3>
+        <p>Optimisez vos infrastructures et vos services avec le cloud, la virtualisation et les architectures modernes.</p>
+        <a href="#">En savoir plus →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DERNIERS ARTICLES -->
+  <section class="articles">
+    <div class="section-header">
+      <h2>DERNIERS ARTICLES</h2>
+      <a href="#">Voir tous les articles →</a>
+    </div>
+    <div class="article-grid">
+      <div class="article">
+        <img src="Dossier images/ia.jpg" alt="">
+        <h4>L'IA générative en 2024 : où en sommes-nous ?</h4>
+        <p class="meta">12 mai 2024 • IA</p>
+      </div>
+      <div class="article">
+        <img src="Dossier images/malwar.jpg" alt="">
+        <h4>Les ransomwares en 2024 : menaces et parades</h4>
+        <p class="meta">8 mai 2024 • Cybersécurité</p>
+      </div>
+      <div class="article">
+        <img src="Dossier images/cloud.jpg" alt="">
+        <h4>Le multi-cloud : stratégie gagnante pour les entreprises</h4>
+        <p class="meta">5 mai 2024 • Cloud</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="logo"><strong>TechNova</strong></div>
+        <p>L'actualité des nouvelles technologies</p>
+      </div>
+      <div>
+        <h5>LIENS RAPIDES</h5>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">IA</a></li>
+          <li><a href="#">Cybersécurité</a></li>
+          <li><a href="#">Cloud</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>RESSOURCES</h5>
+        <ul>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Vidéos</a></li>
+          <li><a href="#">Livres blancs</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>SUIVEZ-NOUS</h5>
+        <div class="socials">
+          <i class="fab fa-facebook"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-snapchat"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2024 TechNova. Tous droits réservés.</p>
+  </footer>
+<script>
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+</script>
+
+<style>
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #0B1120;
+    padding: 20px;
+    gap: 15px;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+}
+</style>
+</body>
+</html>
